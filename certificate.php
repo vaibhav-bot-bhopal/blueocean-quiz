@@ -12,6 +12,44 @@ $email = $row['c_email'];
 $name = $row['c_name'];
 $c_result = $row['c_result'];
 
+
+if ($c_quiz == "tiger_day_quiz_july_2021") {
+   if ($c_result == 1) {
+      $data = '
+      <style> *{padding:0;margin:0;}.content_area {position:fixed;top:0;left:0; }.content1 {position:absolute; z-index:999; top:45%; left:10%; right:10%; text-align:justify;} #para{font-size:24px; line-height: 38px;}
+      </style>
+      <div class="content_area">
+      <img src="dompdf/' . $c_quiz . '.jpg" alt="" width="100%" height="795px">
+      </div>
+      <div class="content1">
+      <p id="para">This is to certify that Mr. / Ms. <span style="font-weight: 700;">' . $name . '</span> has participated in the <span style="font-weight: 700;">"Tiger Day Quiz 2021"</span> organized by Madhya Pradesh Tiger Foundation Society to create awareness for the cause of Tiger and Wildlife Conservation. Mr./Ms. <span style="font-weight: 700;">' . $name . '</span> was among the <span style="font-weight: 700;">Top 100 Scorers</span> of the Tiger Day Quiz 2021. We appreciate the participation and wish them all the best for future endeavours.
+      </p>
+      <div>';
+   }else if ($c_result == 2) {
+      $data = '
+      <style> *{padding:0;margin:0;}.content_area {position:fixed;top:0;left:0; }.content1 {position:absolute; z-index:999; top:45%; left:10%; right:10%; text-align:justify;} #para{font-size:24px; line-height: 38px;}
+      </style>
+      <div class="content_area">
+      <img src="dompdf/' . $c_quiz . '.jpg" alt="" width="100%" height="795px">
+      </div>
+      <div class="content1">
+      <p id="para">This is to certify that Mr. / Ms. <span style="font-weight: 700;">' . $name . '</span> has participated in the <span style="font-weight: 700;">"Tiger Day Quiz 2021"</span> organized by Madhya Pradesh Tiger Foundation Society to create awareness for the cause of Tiger and Wildlife Conservation. Mr./Ms. <span style="font-weight: 700;">' . $name . '</span> was the <span style="font-weight: 700;">Winner</span> of the Tiger Day Quiz 2021. We appreciate the participation and wish him all the best for future endeavours.
+      </p>
+      <div>';
+   } else {
+      $data = '
+      <style> *{padding:0;margin:0;}.content_area {position:fixed;top:0;left:0; }.content1 {position:absolute; z-index:999; top:45%; left:10%; right:10%; text-align:justify;} #para{font-size:24px; line-height: 38px;}
+      </style>
+      <div class="content_area">
+      <img src="dompdf/' . $c_quiz . '.jpg" alt="" width="100%" height="795px">
+      </div>
+      <div class="content1">
+      <p id="para">This is to certify that Mr. / Ms. <span style="font-weight: 700;">' . $name . '</span> has participated in the <span style="font-weight: 700;">"Tiger Day Quiz 2021"</span> organized by Madhya Pradesh Tiger Foundation Society to create awareness for the cause of Tiger and Wildlife Conservation. We appreciate the participation and wish them all the best for future endeavours.
+      </p>
+      <div>';
+   }
+}
+
 if($c_quiz=="barasingha_july_quiz_2021") {
    if($c_result==1)
    {
@@ -26,7 +64,7 @@ if($c_quiz=="barasingha_july_quiz_2021") {
       </p>
       <div>';
    }
-  else if($c_result==2)
+   else if($c_result==2)
    {
       $data = '
       <style> *{padding:0;margin:0;}.content_area {position:fixed;top:0;left:0; }.content1 {position:absolute; z-index:999; top:38%; left:10%; right:10%; text-align:justify;} #para{font-size:24px; line-height: 38px;}

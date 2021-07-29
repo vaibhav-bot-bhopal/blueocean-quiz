@@ -14,6 +14,7 @@ include('includes/connection.inc.php');
                     <label class="text-primary mb-3" style="font-size: 18px; font-weight: 700;">Select Your Quiz and Month</label>
                     <select id="quiz" name="quiz" class="form-control mb-2" style="font-size: 14px; font-weight: 700;">
                         <option value="">----- Select Your Quiz Here -----</option>
+                        <option value="tiger_day_quiz_july_2021">Tiger Day Quiz 2021</option>
                         <option value="barasingha_july_quiz_2021">Barasingha Quiz 2021</option>
                         <option value="sparrow_june_2021">World Sparrow Day Quiz 2021</option>
                         <option value="bsss_june_2021">World Environment Day Quiz (BSSS College) 2021</option>
