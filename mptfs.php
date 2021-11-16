@@ -107,7 +107,7 @@ include('includes/connection.inc.php');
     var mail_value = $("#email").val();
 
     $.ajax({
-      url: 'customer_search.php',
+      url: 'auto_certificate.php',
       type: 'post',
       data: 'quiz=' + quiz + '&email=' + mail_value,
       success: function(data, status) {
